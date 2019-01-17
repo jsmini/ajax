@@ -1,24 +1,34 @@
 # 文档
-这是一个xxx库，有xxx功能
+这是一个小型的ajax库，具有简单的发送ajax请求的功能。
 
-## api模版
-函数简单介绍
-
-函数详细介绍
-
-函数参数和返回值（要遵守下面的例子的规则）
-
-- param {string} name1 name1描述
-- param {number} [name2] name2描述 ([]代表可选参数)
-- param {string|number} name3 name3描述 (| 代表多种类型)
-- param {*} name3 name3描述 (*代表任意类型)
-- param {boolean} obj.sex 复合参数定义
-- return {string} 返回值描述
+## 参数表
+| 参数 | 默认值 | 描述 | 可选值 |
+|:----|:----|:----|:----|
+| method | get | 请求的方法 | get,post |
+| url | "" | 请求的链接 | string |
+| data | null | 请求的数据 | object,string |
+| dataType | "" | 请求的类型 | json |
+| async | true | 是否异步 | blooean |
+| error | function(){} | 请求报错执行的函数 | function |
+| success | function(){} | 请求成功的回调函数 | function |
 
 举个例子（要包含代码用例）
 
 ```js
 // 代码
+<script src="../dist/index.js"></script>
+<script>
+  ajax({
+    url: './test.json',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+    },
+    error: function(error) {
+      console.log(err);
+    }
+})
+</script>
 ```
 
 特殊说明，比如特殊情况下会报错等
