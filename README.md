@@ -41,7 +41,7 @@ $ npm install --save @jsmini/ajax
 如果你是node环境
 
 ```js
-var name = require('@jsmini/ajax').name;
+var ajax = require('@jsmini/ajax').ajax;
 ```
 
 如果你是webpack等环境
