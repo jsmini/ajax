@@ -7,7 +7,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/ajax.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/ajax)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/ajax.svg)](http://isitmaintained.com/project/jsmini/ajax "Percentage of issues still open")
 
-一组小而美的JS库，jsmini脚手架，fork或clone本仓库，即可搭建完成一个新的jsmini库
+这是一个小型的ajax库，具有简单的发送ajax请求的功能，还包含jsonp跨域。不依赖jQuery，不用负担jQuery复杂的逻辑处理带来的性能消耗。
 
 ## 兼容性
 单元测试保证支持如下环境：
@@ -47,7 +47,7 @@ var name = require('@jsmini/ajax').name;
 如果你是webpack等环境
 
 ```js
-import { name } from '@jsmini/ajax';
+import ajax from '@jsmini/ajax';
 ```
 
 如果你是requirejs环境
