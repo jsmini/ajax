@@ -1,6 +1,8 @@
+'use strict';
+
 var expect = require('expect.js');
 
-var base = require('../dist/index.js');
+var ajax = require('../dist/index.js');
 
 describe('单元测试', function() {
     this.timeout(1000);
